@@ -2,6 +2,9 @@
 
 Welcome to Search recipes web application! This project is built using ReactJS for the user interface and Redux for state management. It allows users to search for recipes based on keywords and utilizes the EDAMAM free recipe API for fetching recipe data.
 
+### [deployed link](https://search-recipes.vercel.app/).
+
+
 ## Getting Started
 
 To get started with this project, follow these steps:
