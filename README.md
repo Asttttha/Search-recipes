@@ -31,4 +31,4 @@ npm install react-redux redux @reduxjs/toolkit @redux-devtools/extension redux-t
 
 ```
 
-#### _don't forget to install react devtools extension on your browser_
+###### _Don't forget to install react devtools extension on your browser_
