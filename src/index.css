@@ -1,0 +1,260 @@
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Dancing Script", serif;
+  font-style: italic;
+  color: brown;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(255, 149, 0);
+  padding: 0 5rem;
+  color: beige;
+}
+
+.footer p {
+  padding: 0;
+  margin: 5px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home {
+  display: flex;
+  height: 66vh;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3rem;
+  margin: 3rem;
+}
+
+.searchbar,
+.picture {
+  width: 50%;
+}
+
+.picture {
+  background-color: rgba(255, 149, 0, 0.582);
+  margin: 2rem 0;
+  border-radius: 100% 0;
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 300px;
+  animation: animName 15s linear infinite;
+  height: 300px;
+}
+
+.input {
+  padding: 5px 25px;
+  border: rgb(183, 181, 181) solid 1px;
+  border-radius: 15px;
+}
+.btn {
+  border: none;
+  border-radius: 3px;
+  color: white;
+  border-radius: 15px;
+  padding: 0 44px;
+  background-color: rgba(255, 149, 0);
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: max-content;
+  margin: 70px 0;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  border: rgba(255, 149, 0, 0.582) 1px solid;
+}
+
+.imageDiv {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 149, 0, 0.582);
+  border-radius: 100% 0;
+  margin: 10px 0;
+}
+.imageRecipe {
+  width: 10rem;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 149, 0, 0.582);
+  background-color: #fff;
+}
+
+.labelDiv {
+  background-color: rgba(255, 149, 0);
+  width: 20rem;
+  height: 2rem;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  color: beige;
+  font-size: 15px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+.recipe-data {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  width: max-content;
+  height: max-content;
+}
+
+.outer-recipe {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-recipes {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-text-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.recipes-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: rgba(255, 149, 0, 0.582);
+  border-radius: 100% 0;
+  animation: bounce 3s linear infinite;
+}
+
+.ingredientsDiv {
+  width: 20rem;
+  height: 8rem;
+  overflow: auto;
+  margin: 10px;
+  overflow-x: hidden;
+}
+.ingredientsDiv::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ingredientsDiv::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0.167);
+  border-radius: 90%;
+}
+
+.ingredientsDiv::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 90%;
+}
+
+.ingredientsDiv::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+.ingredients {
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 786px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home {
+    height: auto;
+    flex-direction: column-reverse;
+    margin: 2rem;
+    width: 80%;
+  }
+
+  .searchbar,
+  .picture {
+    width: 100%;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .input {
+    padding: 5px 15px;
+  }
+  .btn {
+    padding: 0 9px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+}
